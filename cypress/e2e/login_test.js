@@ -16,9 +16,7 @@ describe('Login Tests', () => {
         
         cy.on('window:alert',(alertText)=>{
             expect(alertText).to.contain('validation failed')
-            // cy.log(alertText)
             return true
-            
         })
     });
     
